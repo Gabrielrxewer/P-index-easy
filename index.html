@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Maintance</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swat" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="agenda.html">
+<link rel="stylesheet" href="projeto.html">
+<link rel="stylesheet" href="sugestao.html">
+<link rel="stylesheet" href="invista.html">
+<link rel="javascript" href="scripts.js">
+<link rel="stylesheet" href="get-started.html">
+<body>  
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>Easy Maintance</Danki></h2>
+            </div> <!--logo-->
+            <div class="menu">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="index.html">
+                    Sobre
+                </a>
+                <a href="index.html">
+                    Contato
+                </a>
+                <a class="btn-menu" href="get-started.html">
+                    Get Started
+                </a>
+            </div><!--menu-desktop-->
+            <div class="menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div><!--center-->
+  
+    </header>
+    <section class="main">
+        <div class="center">
+            <div class="main__cta">
+                <h2>Easy Maintance</h2>
+                <p>Faça parte da mudança!</p>
+                <a class="btn-get" href="get-started.html">
+                    Get Started
+                </a>
+                <div class="diferenciais">          
+                    <button class="btn1" onclick="openlink(url1)">
+                        <div class="diferencial-single1">                      
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h2>Projeto</h2>
+                            <p>Conheça nosso projeto, fique por dentro de todos os detalhes e ideias apresentadas na StartUp.</p>
+                        </div> <!--diferencial-single-->
+                    </button>
+                    <button class="btn2" onclick="openlink(url2)">
+                        <div class="diferencial-single2">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <h2>Agenda</h2>
+                            <p>Veja a nossa agenda, e fique por dentro de quando faremos conferências para falar sobre a StartUp.</p>
+                        </div> <!--diferencial-single-->
+                    </button>
+                    <button class="btn3" onclick="openlink(url3)">
+                        <div class="diferencial-single3">
+                            <i class="fa-solid fa-comment"></i>
+                            <h2>Deixe sua Sugestão!</h2>
+                            <p>Caso tenha experiência com PCM, deixe aqui o que você gostaria de ver em um Software CMMS.</p>
+                        </div> <!--diferencial-single-->
+                    </button>
+                    <button class="btn4" onclick="openlink(url4)">
+                        <div class="diferencial-single4">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <h2>Invista!</h2>
+                            <p>Caso nosso projeto seja de seu interesse e queira investir, podemos negociar, <b>Fale Conosco!</b></p>
+                        </div> <!--diferencial-single-->
+                    </button>
+            </div><!--main-cta-->            
+        </div><!--center-->
+    </section><!--main-->
+
+    <section class="sobre">
+        <div class="center-sobre">
+            <div class="chamada-sobre">
+                <h2>Sobre a Easy</h2>
+                <p>Entenda o nosso objetivo e até onde podemos elevar o nível da sua Manutenção!</p>
+            </div> <!--chamada-sobre-->
+            <div class="conteudo-sobre">
+                <p class="p1">Na Easy, você irá encontrar flexibilidade, nosso Software pode ser integrado com seu ERP de forma muito simples, podemos
+                    dar total liberdade para a sua empresa realizar a integração, ou você pode deixar para que nós possamos realizar a integração!
+                    <br>
+                    <span class="i1"><i class="fa-solid fa-check"></i> Flexibilidade na sua Integração!</span>
+                    <br>
+                    <span class="i2"><i class="fa-solid fa-check"></i> Flexibilidade nos seus Relatórios!</span>
+                </p>
+                <p class="p2">Adquira já o Software Easy Maintance e faça parte da nova Industria, inove na sua manutenção e tenha novos resultados
+                    oferecemos uma gama enorme de relatórios e funções inovadoras, deixe pra trás toda a sua manutenção massante e encontre facilidade com a Easy Maintance!
+                    
+                    <br> <button class="saiba">Saiba mais!</button></p>             
+                <br>   
+
+            </div> <!--conteudo-sobre-->
+        </div> <!--center-->
+    </section> <!--sobre-->
+  
+    <script>
+
+        //Variaveis
+
+    const url1 = 'projeto.html'
+    const url2 = 'agenda.html'
+    const url3 = 'sugestao.html'
+    const url4 = 'invista.html'
+    const btn1 = document.querySelector('#btn1')
+    const btn2 = document.querySelector('#btn2')
+    const btn3 = document.querySelector('#btn3')
+    const btn4 = document.querySelector('#btn4')
+
+        //Function -> Open link
+
+        function openlink(url1,url2,url3,url4)  {
+            open(url1,url2,url3,url4,) 
+}
+        //Event -> Open link
+
+btn1.addEventListener("click", () => {
+openlink(url1)
+})
+btn2.addEventListener("click", () => {
+openlink(url2)
+})
+btn3.addEventListener("click", () => {
+openlink(url3)
+})
+btn4.addEventListener("click", () => {
+openlink(url4)
+})
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/cf11c1c5de.js" crossorigin="anonymous"></script>
+</body>
+</html

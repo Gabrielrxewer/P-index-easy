@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex: wrap;
+}
+.menu-mobile {
+    display: none;
+}
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.logo {
+    color: #16507b;
+
+}
+.logo h2{
+    font-size: 22px;
+    font-weight: normal;
+}
+.menu{
+    width: 80%;
+    text-align: right;
+}
+.menu a{
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.6s;
+}
+.menu a:hover{
+    color: #007bff;
+}
+.menu .btn-menu{
+    background-color: #007bbf;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+}
+
+.menu .btn-menu:hover{
+    background-color: #124265 ;
+    color: white;
+}
+
+/*
+Section Main
+*/
+
+section.main{
+    background-image:url('scola.webp');
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main__cta{
+    width: 100%;
+    text-align: center;
+    margin: 60px 0;
+}   
+.main__cta h2{
+    color: #16507b;
+    font-size: 40px;
+}
+.main__cta p{
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+.btn-get{
+    background-color: #007bbf;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-bottom: 100px;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.7s;
+}
+.btn-get:hover{
+    background-color:#124265;
+}
+.diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn1, .btn2, .btn3, .btn4 {
+    text-align: left;
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 0px 0px;
+    cursor: pointer;
+    transition: 0.8s;
+    border-color: white;
+    border-style: none;
+}
+.diferencial-single1, .diferencial-single2, .diferencial-single3, .diferencial-single4{
+    text-align: left;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    margin-right: 2%;
+    padding: 50px 20px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.diferencial-single1:hover, .diferencial-single2:hover, .diferencial-single3:hover, .diferencial-single4:hover{
+    background-color: rgb(221, 221, 221);
+    animation:both;
+}
+.diferencial-single1 i, .diferencial-single2 i, .diferencial-single3 i, .diferencial-single4 i{
+    color:#124265;
+    font-size: 23px;
+}
+.diferencial-single1 h2, .diferencial-single2 h2, .diferencial-single3 h2, .diferencial-single4 h2{
+    color: #124265;
+    font-size: 17px;
+}
+.diferencial-single1 p, .diferencial-single2 p, .diferencial-single3 p, .diferencial-single4 p{
+    color: gray;
+    font-size:  14px;
+    line-height: 30px;
+}
+section.sobre{
+    padding: 80px 0;
+}
+.center-sobre{
+    display: block;
+}
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.chamada-sobre h2{
+    color: #124265;
+    text-transform: uppercase;
+}
+.chamada-sobre p{
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 10px 380px;
+}
+.p2{
+    padding: 0px -20px;
+    color: #444444;
+    width: 44%;
+    margin-left: 6%;
+}
+.p1 {
+    
+    width: 44%;
+    margin-left: 6%;
+    color: #444444;
+}
+.saiba{
+    background-color: white;
+    display: inline-block;
+    padding: 5px 100px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 100px;
+    color: #007bbf;
+    border-radius: 6px;
+    border: 2 2 2;
+    border-color: #007bbf;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.saiba:hover{
+    background-color: #124265;
+    color: white;
+}
+.i1{
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.i2 {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.conteudo-sobre i{
+    color: #007bbf;
+}
+
+@media screen and (max-width: 768px){
+    .btn1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn2{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn3{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn4{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .conteudo-sobre{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .p1, .p2{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 120px;
+        text-align: center;
+    }
+    .saiba{
+        margin-left: -20px;
+    }
+    .p1 span{
+        margin-left: -20px;
+    }
+    .logo {
+        width: 20%;
+        margin-left: 40px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-mobile {
+        display:block;
+        text-align: right;
+        width: 80%;
+    }
+    .menu-mobile {
+        cursor: pointer;
+        font-size: 33px;
+        margin-top: 8px;
+        margin-right: 40px;
+    }
+}
